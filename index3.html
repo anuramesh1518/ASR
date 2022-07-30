@@ -1,0 +1,26 @@
+webserver commands:
+1.yum install httpd -y
+2.yum install firewall* -y
+3.systemctl start httpd
+4.systemctl enable httpd
+5.systemctl start firewalld
+6.systemctl enable firewalld
+7.systemctl status firewalld
+8.firewall-cmd --add-port=80/tcp --permanent
+9.firewall-cmd --reload
+10.useradd username
+11.passwd username
+12.cd /var
+13.ls -l
+14.cd www
+15.ls -l
+16.chown username:username html
+17.cd ..
+18.chown username:username www
+19.cd ..
+20.chown username:username var
+21.vi /etc/ssh/sshd_config remove# tag yes and add # tag to no 
+22.systemctl restart sshd
+22.ssh-keygen
+enter key press 3 times
+23.ssh-copy-id username@webserver ip address
